@@ -2,15 +2,30 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#060605">
   <title>YYOKAI</title>
   <style>
-    html, body, iframe {
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
       width: 100%;
       height: 100%;
-      border: 0;
+      min-height: 100dvh;
+      background: #060605;
+      overflow: hidden;
+    }
+    iframe {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100dvh;
+      border: none;
+      outline: none;
+      background: #060605;
       display: block;
     }
   </style>
